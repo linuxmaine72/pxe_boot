@@ -1,0 +1,14 @@
+#default menu for all PXE boot
+DEFAULT vesamenu.c32
+# liste des choix 
+label Boot local disk
+    kernel chain.c32 
+    append hd0
+
+label Trusty 14-04 32bits installer
+        kernel trusty/ubuntu-installer/i386/boot-screens/vesamenu.c32
+        append trusty/ubuntu-installer/i386/boot-screens/menu.cfg
+
+label Trusty 14-04 64bits installer
+        kernel trusty/ubuntu-installer/amd64/boot-screens/vesamenu.c32
+        append trusty/ubuntu-installer/amd64/boot-screens/menu.cfg
