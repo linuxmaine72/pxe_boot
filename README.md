@@ -4,6 +4,21 @@ Fichiers de configuration du serveur d'installation de linuxmaine
 
 source : http://doc.ubuntu-fr.org/netboot
 
+Arrborescense dans /var/lib/tftpboot
+.
+├── pxelinux.cfg
+│   └── default
+├── trusty
+│   ├── amd64
+│   │   ├── bootscreen
+│   │   └── pxelinux.cfg
+│   └── i386
+├── bootdisk
+│   ├── dban.img
+│   └── ntpass.img
+├── menu.c32
+└── pxelinux.0
+
 Fichiers binaire qui ne sont pas dans le repo
    - chain.c32
    - pxelinux.0
